@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coffee Land | Specialty Brews & Premium Cafe Experience</title>
+  <meta name="description" content="Experience premium hand-picked beans, customizable specialty drinks, and artisanal brewing at Coffee Land. Order online for pickup or delivery.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Sticky Frosted Header -->
+  <header>
+    <div class="container nav-container">
+      <a href="#hero" class="logo" id="nav-logo">
+        <svg viewBox="0 0 24 24">
+          <path d="M2 21h18v-2H2v2zM20 8h-2V5h2v3zm2-5H4v13c0 2.2 1.8 4 4 4h8c2.2 0 4-1.8 4-4v-3h2c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM6 5h10v11c0 1.1-.9 2-2 2H8c-1.1 0-2-.9-2-2V5z"/>
+        </svg>
+        COFFEE<span>LAND</span>
+      </a>
+
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#customizer">Customizer</a></li>
+          <li><a href="#brewing">Brewing Guide</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="cart-icon-btn" id="open-cart-btn" aria-label="Open Shopping Cart">
+          <svg viewBox="0 0 24 24">
+            <circle cx="9" cy="21" r="1"/>
+            <circle cx="20" cy="21" r="1"/>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+          </svg>
+          <span class="cart-badge" id="cart-badge-count">0</span>
+        </button>
+        <button class="menu-toggle" id="menu-hamburger" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero">
+    <div class="container hero-content">
+      <span class="hero-tagline">Welcome to Coffee Land</span>
+      <h1>Crafted With <span>Love</span>,<br>Brewed For You</h1>
+      <p class="hero-desc">Savor the organic essence of hand-picked beans, roasted locally in small batches and served fresh daily by passionate baristas.</p>
+      <div class="hero-btns">
+        <a href="#menu" class="btn btn-primary">Explore Menu</a>
+        <a href="#customizer" class="btn btn-outline">Customize Your Cup</a>
+      </div>
+    </div>
+    
+    <!-- Floating Visual Elements -->
+    <div class="floating-beans">
+      <div class="bean bean-1"></div>
+      <div class="bean bean-2"></div>
+      <div class="bean bean-3"></div>
+    </div>
+    
+    <div class="hero-shape-overlay"></div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section-padding">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-img-wrapper">
+          <img src="assets/images/about_beans.png" alt="Sourcing premium coffee beans" class="about-img">
+          <div class="about-badge">
+            <span class="number">100%</span>
+            <span class="text">Organic Arabica</span>
+          </div>
+        </div>
+        
+        <div class="about-content">
+          <span class="section-subtitle">Our Story</span>
+          <h2 class="section-title">Cultivating Moments of Pure Delight</h2>
+          <p style="margin-top: 20px;">At Coffee Land, we believe that coffee is more than just a morning routine. It is a craft, a connection, and an art form. We partner directly with sustainable, fair-trade farms across Ethiopia, Colombia, and Sumatra to source only the finest Arabica cherries.</p>
+          <p>Every single batch is roasted locally by our roast master, unlocking complex floral, citrusy, and chocolatey profiles that speak of their origin. We invite you to slow down, taste the detail, and find your perfect cup.</p>
+          
+          <div class="about-features">
+            <div class="feature-item">
+              <div class="feature-icon">
+                <svg viewBox="0 0 24 24"><path d="M12 3C6.5 3 2 6.5 2 12c0 3.58 2.5 6.58 6 7.5v-2.13C5.5 16.5 4 14.5 4 12c0-4.41 3.59-8 8-8s8 3.59 8 8c0 2.5-1.5 4.5-4 5.37v2.13c3.5-.92 6-3.92 6-7.5 0-5.5-4.5-9-10-9z"/></svg>
+              </div>
+              <div>
+                <h4 class="feature-title">Locally Roasted</h4>
+                <p style="font-size:0.85rem; color:var(--text-muted);">Freshly roasted in micro-batches</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">
+                <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H7c0-2.76 2.24-5 5-5s5 2.24 5 5c0 1.04-.42 1.99-1.07 2.75z"/></svg>
+              </div>
+              <div>
+                <h4 class="feature-title">Expert Baristas</h4>
+                <p style="font-size:0.85rem; color:var(--text-muted);">Brewing consistency with passion</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Menu Section -->
+  <section id="menu" class="section-padding" style="background-color: var(--bg-secondary);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Our Menu</span>
+        <h2 class="section-title">Artisanal Specialties</h2>
+      </div>
+      
+      <!-- Interactive Category Tabs -->
+      <div class="menu-filters">
+        <button class="filter-btn active" data-filter="all">All Items</button>
+        <button class="filter-btn" data-filter="espresso">Espresso Drinks</button>
+        <button class="filter-btn" data-filter="cold-brews">Cold Brews</button>
+        <button class="filter-btn" data-filter="specials">Signature Specials</button>
+      </div>
+
+      <!-- Menu Grid (Populated by JS) -->
+      <div class="menu-grid">
+        <!-- Javascript items injected here -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Coffee Customizer Section -->
+  <section id="customizer" class="section-padding">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Drink Customizer</span>
+        <h2 class="section-title">Design Your Perfect Brew</h2>
+      </div>
+
+      <div class="customizer-grid">
+        <!-- Visual Preview Side -->
+        <div class="customizer-visualizer glass-panel">
+          <div class="steam-container">
+            <span class="steam-line"></span>
+            <span class="steam-line"></span>
+            <span class="steam-line"></span>
+          </div>
+
+          <div class="svg-cup-container">
+            <!-- Dynamic Interactive SVG Coffee Cup -->
+            <svg class="svg-cup" viewBox="0 0 200 250" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <!-- Liquid clipping mask inside the cup geometry -->
+                <clipPath id="cup-clip">
+                  <path d="M 45 40 L 52 205 C 53 220, 65 230, 80 230 L 120 230 C 135 230, 147 220, 148 205 L 155 40 Z"/>
+                </clipPath>
+              </defs>
+
+              <!-- Cup Handle -->
+              <path d="M 152 75 C 185 75, 185 145, 150 145" fill="none" stroke="rgba(255, 255, 255, 0.25)" stroke-width="8" stroke-linecap="round" />
+              <path d="M 152 75 C 185 75, 185 145, 150 145" fill="none" stroke="var(--bg-card)" stroke-width="4" stroke-linecap="round" />
+
+              <!-- Liquid Contents (Clipped) -->
+              <g clip-path="url(#cup-clip)">
+                <!-- Base Coffee/Tea Liquid Layer -->
+                <rect class="cup-liquid-espresso" x="0" y="40" width="200" height="200" />
+                
+                <!-- Milk Swirl layer (glowing cream lines when milk is active) -->
+                <path class="cup-milk-swirl" d="M 40 180 Q 80 160 120 190 T 160 170" fill="none" stroke="#faedcd" stroke-width="12" opacity="0" style="transition: opacity var(--transition-normal);"/>
+
+                <!-- Foam Layer at top of liquid -->
+                <ellipse class="cup-foam" cx="100" cy="50" rx="60" ry="12" />
+
+                <!-- Caramel Drizzle Squiggles -->
+                <path class="cup-caramel" d="M 55 46 Q 70 38 85 46 T 115 46 T 145 46" />
+              </g>
+
+              <!-- Whipped Cream Layer (Sits on top of the cup) -->
+              <path class="cup-cream" d="M 50 42 C 45 35, 60 20, 75 25 C 90 10, 110 10, 125 25 C 140 20, 155 35, 150 42 Z" />
+
+              <!-- Cup Outer Glass Outline -->
+              <path class="cup-body" d="M 45 40 L 52 205 C 53 220, 65 230, 80 230 L 120 230 C 135 230, 147 220, 148 205 L 155 40 Z" fill="none" />
+              
+              <!-- Glass Rim Highlight -->
+              <ellipse cx="100" cy="40" rx="55" ry="8" fill="none" stroke="rgba(255, 255, 255, 0.4)" stroke-width="3" />
+            </svg>
+          </div>
+
+          <div class="visual-price" id="custom-price">$4.10</div>
+          <div class="visual-name" id="custom-name-preview">Custom Medium Espresso</div>
+
+          <div class="form-group" style="width: 100%; max-width: 320px;">
+            <label for="customizer-name" class="form-label" style="text-align: center;">Name Your Brew</label>
+            <input type="text" id="customizer-name" class="form-input" style="text-align: center;" placeholder="My Special Brew" data-user-edited="false">
+          </div>
+        </div>
+
+        <!-- Options Side -->
+        <div class="customizer-options glass-panel">
+          
+          <!-- Size Selector -->
+          <div class="option-group">
+            <span class="option-group-title">
+              1. Choose Size <span class="selected-val" id="size-selected-text">Medium</span>
+            </span>
+            <div class="radio-cards">
+              <label class="radio-card">
+                <input type="radio" name="cust-size" value="small">
+                <div class="radio-card-content">
+                  <svg viewBox="0 0 24 24"><path d="M2 21h18v-2H2v2zM20 8h-2V5h2v3zm2-5H4v13c0 2.2 1.8 4 4 4h8c2.2 0 4-1.8 4-4v-3h2c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2Z" transform="scale(0.85) translate(2, 2)" /></svg>
+                  <span class="radio-card-title">Small (8oz)</span>
+                  <span class="radio-card-extra">Base Price</span>
+                </div>
+              </label>
+              <label class="radio-card">
+                <input type="radio" name="cust-size" value="medium" checked>
+                <div class="radio-card-content">
+                  <svg viewBox="0 0 24 24"><path d="M2 21h18v-2H2v2zM20 8h-2V5h2v3zm2-5H4v13c0 2.2 1.8 4 4 4h8c2.2 0 4-1.8 4-4v-3h2c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2Z" /></svg>
+                  <span class="radio-card-title">Medium (12oz)</span>
+                  <span class="radio-card-extra">+$0.60</span>
+                </div>
+              </label>
+              <label class="radio-card">
+                <input type="radio" name="cust-size" value="large">
+                <div class="radio-card-content">
+                  <svg viewBox="0 0 24 24"><path d="M2 21h18v-2H2v2zM20 8h-2V5h2v3zm2-5H4v13c0 2.2 1.8 4 4 4h8c2.2 0 4-1.8 4-4v-3h2c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2Z" transform="scale(1.15) translate(-2, -2)" /></svg>
+                  <span class="radio-card-title">Large (16oz)</span>
+                  <span class="radio-card-extra">+$1.10</span>
+                </div>
+              </label>
+            </div>
+          </div>
+
+          <!-- Base Drink Selection -->
+          <div class="option-group">
+            <span class="option-group-title">
+              2. Base Blend <span class="selected-val" id="base-selected-text">Espresso</span>
+            </span>
+            <div class="radio-cards">
+              <label class="radio-card">
+                <input type="radio" name="cust-base" value="espresso" checked>
+                <div class="radio-card-content">
+                  <svg viewBox="0 0 24 24"><path d="M2 21h18v-2H2v2zM20 8h-2V5h2v3zm2-5H4v13c0 2.2 1.8 4 4 4h8c2.2 0 4-1.8 4-4v-3h2c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM6 5h10v11c0 1.1-.9 2-2 2H8c-1.1 0-2-.9-2-2V5z"/></svg>
+                  <span class="radio-card-title">Espresso</span>
+                  <span class="radio-card-extra">Organic Blend</span>
+                </div>
+              </label>
+              <label class="radio-card">
+                <input type="radio" name="cust-base" value="matcha">
+                <div class="radio-card-content">
+                  <svg viewBox="0 0 24 24"><path d="M12 3a9 9 0 0 0-9 9c0 3.58 2.5 6.58 6 7.5v-2.13C5.5 16.5 4 14.5 4 12a8 8 0 1 1 16 0c0 2.5-1.5 4.5-4 5.37v2.13c3.5-.92 6-3.92 6-7.5a9 9 0 0 0-9-9z"/></svg>
+                  <span class="radio-card-title">Uji Matcha</span>
+                  <span class="radio-card-extra">+$1.00</span>
+                </div>
+              </label>
+              <label class="radio-card">
+                <input type="radio" name="cust-base" value="cocoa">
+                <div class="radio-card-content">
+                  <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H7c0-2.76 2.24-5 5-5s5 2.24 5 5c0 1.04-.42 1.99-1.07 2.75z"/></svg>
+                  <span class="radio-card-title">Cocoa</span>
+                  <span class="radio-card-extra">+$0.50</span>
+                </div>
+              </label>
+            </div>
+          </div>
+
+          <!-- Milk Selection -->
+          <div class="option-group">
+            <label for="cust-milk" class="option-group-title">3. Milk Alternative</label>
+            <select id="cust-milk" class="select-dropdown">
+              <option value="none">No Milk (Black / Clear)</option>
+              <option value="whole" selected>Steamed Whole Milk</option>
+              <option value="oat">Organic Oat Milk (+$0.60)</option>
+              <option value="almond">Creamy Almond Milk (+$0.60)</option>
+            </select>
+          </div>
+
+          <!-- Sweetness Slider -->
+          <div class="option-group">
+            <span class="option-group-title">
+              4. Sweetness Level <span class="selected-val" id="sweet-selected-text">Medium Sweet</span>
+            </span>
+            <div class="slider-container">
+              <input type="range" id="cust-sweetness" min="0" max="100" step="50" value="50" class="range-slider">
+              <div class="slider-labels">
+                <span>0% Unsweetened</span>
+                <span>50% Medium</span>
+                <span>100% Fully Sweet</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Extras / Toppings -->
+          <div class="option-group">
+            <span class="option-group-title">5. Custom Additions</span>
+            <div class="checkbox-grid">
+              <label class="checkbox-item">
+                <input type="checkbox" value="cream">
+                <div class="checkbox-content">
+                  <span class="checkbox-label">Whipped Cream</span>
+                  <span class="checkbox-price">+$0.50</span>
+                </div>
+              </label>
+              <label class="checkbox-item">
+                <input type="checkbox" value="caramel">
+                <div class="checkbox-content">
+                  <span class="checkbox-label">Caramel Drizzle</span>
+                  <span class="checkbox-price">+$0.50</span>
+                </div>
+              </label>
+              <label class="checkbox-item">
+                <input type="checkbox" value="extraShot">
+                <div class="checkbox-content">
+                  <span class="checkbox-label">Extra Shot</span>
+                  <span class="checkbox-price">+$1.00</span>
+                </div>
+              </label>
+              <label class="checkbox-item">
+                <input type="checkbox" value="cinnamon">
+                <div class="checkbox-content">
+                  <span class="checkbox-label">Cinnamon Dust</span>
+                  <span class="checkbox-price">+$0.50</span>
+                </div>
+              </label>
+            </div>
+          </div>
+
+          <button id="add-customizer-btn" class="btn btn-primary add-customizer-btn">
+            <svg viewBox="0 0 24 24"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+            Add Custom Brew to Cart
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Brewing Guide Section -->
+  <section id="brewing" class="section-padding" style="background-color: var(--bg-secondary);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Home Barista</span>
+        <h2 class="section-title">Brewing Masterclass</h2>
+      </div>
+
+      <div class="brew-container">
+        <!-- Selection Tabs (Vertical list on large viewports) -->
+        <div class="brew-tabs">
+          <button class="brew-tab-btn active" data-brew="pour_over">
+            <div class="brew-icon">
+              <svg viewBox="0 0 24 24"><path d="M2 21h18v-2H2v2zM20 8h-2V5h2v3zm2-5H4v13c0 2.2 1.8 4 4 4h8c2.2 0 4-1.8 4-4v-3h2c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"/></svg>
+            </div>
+            <div>
+              <div class="brew-tab-title">Pour Over</div>
+              <div class="brew-tab-time">3:00 mins</div>
+            </div>
+          </button>
+          <button class="brew-tab-btn" data-brew="french_press">
+            <div class="brew-icon">
+              <svg viewBox="0 0 24 24"><path d="M2 21h18v-2H2v2zm10-18H6v12h6V3zm8 5h-4V5h4v3zm-8-5h6v12h-6V3z"/></svg>
+            </div>
+            <div>
+              <div class="brew-tab-title">French Press</div>
+              <div class="brew-tab-time">4:00 mins</div>
+            </div>
+          </button>
+          <button class="brew-tab-btn" data-brew="espresso">
+            <div class="brew-icon">
+              <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+            </div>
+            <div>
+              <div class="brew-tab-title">Espresso Shot</div>
+              <div class="brew-tab-time">30 secs</div>
+            </div>
+          </button>
+        </div>
+
+        <!-- Detail & Dynamic Simulation display -->
+        <div class="brew-display glass-panel">
+          <div class="brew-display-header">
+            <h3 class="brew-display-title">Pour Over (Chemex / V60)</h3>
+            <p class="brew-display-desc">A clean, bright cup highlighting origin notes. Requires patience and precision.</p>
+          </div>
+
+          <!-- Chronological Step list -->
+          <div class="brew-steps">
+            <!-- Dynamic steps render by JS -->
+          </div>
+
+          <!-- Brewing Timer Control Widget -->
+          <div class="brew-timer-widget">
+            <div class="timer-visual">
+              <span class="timer-clock">03:00</span>
+              <div class="timer-progress-bg">
+                <span class="timer-progress-bar"></span>
+              </div>
+            </div>
+            <button class="timer-btn" aria-label="Start Brewing Timer">
+              <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="section-padding">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Reviews</span>
+        <h2 class="section-title">Loved by Coffee Lovers</h2>
+      </div>
+
+      <div class="testimonials-slider glass-panel">
+        <!-- Slide 1 -->
+        <div class="testimonial-slide active">
+          <div class="testimonial-rating">
+            <!-- Stars SVG -->
+            <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+          </div>
+          <p class="testimonial-quote">"The single origin pour-over is absolutely phenomenal. I can taste the blueberry and honey notes so clearly. The atmosphere and staff are top-tier."</p>
+          <div class="testimonial-author">
+            <div>
+              <span class="testimonial-author-name">Alex Rivera</span>
+              <span class="testimonial-author-role">Verified Connoisseur</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="testimonial-slide">
+          <div class="testimonial-rating">
+            <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+          </div>
+          <p class="testimonial-quote">"The customizer widget is so cool! I designed my own oat milk matcha with extra caramel and it tasted exactly like I imagined. Seamless checkout process too."</p>
+          <div class="testimonial-author">
+            <div>
+              <span class="testimonial-author-name">Sophia Lin</span>
+              <span class="testimonial-author-role">Regular Patron</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Arrow Controls -->
+      <div class="slider-controls">
+        <button class="slider-arrow" id="prev-testimonial" aria-label="Previous Review">
+          <svg viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6"/></svg>
+        </button>
+        <button class="slider-arrow" id="next-testimonial" aria-label="Next Review">
+          <svg viewBox="0 0 24 24"><path d="M9 18l6-6-6-6"/></svg>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact & Info Section -->
+  <section id="contact" class="section-padding" style="background-color: var(--bg-secondary);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Find Us</span>
+        <h2 class="section-title">Visit Our Coffee House</h2>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Info Cards -->
+        <div class="contact-info">
+          <!-- Real-time Hour status indicator -->
+          <div class="status-badge open" id="shop-status">
+            <span class="status-dot"></span>Checking status...
+          </div>
+          
+          <h3 style="font-size: 2rem;">Stop by for a fresh cup</h3>
+          <p style="color:var(--text-muted);">Located in the heart of the city, we provide a spacious layout, charging terminals, and fiber-optic Wi-Fi for remote creators.</p>
+          
+          <div class="info-cards">
+            <div class="info-card glass-panel">
+              <div class="info-card-icon">
+                <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+              </div>
+              <div class="info-card-detail">
+                <h4>Our Address</h4>
+                <p>342 Specialty Bean Boulevard, Suite 10</p>
+              </div>
+            </div>
+            
+            <div class="info-card glass-panel">
+              <div class="info-card-icon">
+                <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M12 20v-4M8 20h8"/></svg>
+              </div>
+              <div class="info-card-detail">
+                <h4>Hours of Operation</h4>
+                <p>Monday - Sunday: 8:00 AM - 10:00 PM</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form-panel glass-panel">
+          <h3 style="font-size: 1.5rem; margin-bottom: 20px;">Drop Us a Message</h3>
+          <form id="contact-form" novalidate>
+            <div class="form-group">
+              <label for="contact-name" class="form-label">Full Name</label>
+              <input type="text" id="contact-name" class="form-input" required placeholder="Alex Mercer">
+            </div>
+            <div class="form-group">
+              <label for="contact-email" class="form-label">Email Address</label>
+              <input type="email" id="contact-email" class="form-input" required placeholder="alex@mercer.com">
+            </div>
+            <div class="form-group">
+              <label for="contact-msg" class="form-label">How can we help you?</label>
+              <textarea id="contact-msg" class="form-textarea" required placeholder="Tell us about your event or feedback..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary submit-btn">
+              Send Message
+              <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </button>
+            <div class="form-feedback" id="form-feedback"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="footer-logo">
+            <svg viewBox="0 0 24 24"><path d="M2 21h18v-2H2v2zM20 8h-2V5h2v3zm2-5H4v13c0 2.2 1.8 4 4 4h8c2.2 0 4-1.8 4-4v-3h2c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM6 5h10v11c0 1.1-.9 2-2 2H8c-1.1 0-2-.9-2-2V5z"/></svg>
+            COFFEE<span>LAND</span>
+          </a>
+          <p>Crafting daily experiences with certified organic Arabica beans. Sourced responsibly, brewed meticulously.</p>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="Facebook">
+              <svg viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79z"/></svg>
+            </a>
+            <a href="#" class="social-link" aria-label="Instagram">
+              <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-links-col">
+          <h4>Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">Our Story</a></li>
+            <li><a href="#menu">Artisanal Menu</a></li>
+            <li><a href="#customizer">Drink Customizer</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#brewing">Brewing Guides</a></li>
+            <li><a href="#contact">Find Store</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Use</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-newsletter">
+          <h4>Join the Club</h4>
+          <p>Get specialty coffee recipes, brewing tips, and 15% off your first online order.</p>
+          <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Subscribed! Check your inbox for your 15% discount code.'); this.reset();">
+            <input type="email" class="newsletter-input" required placeholder="enter your email">
+            <button type="submit" class="newsletter-btn" aria-label="Subscribe to newsletter">
+              <svg viewBox="0 0 24 24"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Coffee Land Cafe. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Sitemap</a>
+          <a href="#">Sustainability</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Sidebar Cart Drawer Overlay & Panel -->
+  <div class="drawer-overlay"></div>
+  <div class="cart-drawer glass-panel" id="cart-drawer">
+    <div class="cart-header">
+      <h3>
+        <svg viewBox="0 0 24 24">
+          <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/>
+          <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+        </svg>
+        Shopping Cart
+      </h3>
+      <button class="cart-close-btn" aria-label="Close Shopping Cart">
+        <svg viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12"/></svg>
+      </button>
+    </div>
+
+    <!-- Scrollable list of cart items -->
+    <div class="cart-items">
+      <!-- Injected by JS -->
+    </div>
+
+    <!-- Summary block and checkout -->
+    <div class="cart-footer">
+      <div class="cart-summary-line">
+        <span>Subtotal</span>
+        <span id="cart-subtotal">$0.00</span>
+      </div>
+      <div class="cart-summary-line">
+        <span>Estimated Sales Tax (8%)</span>
+        <span id="cart-tax">$0.00</span>
+      </div>
+      <div class="cart-summary-line total">
+        <span>Total Amount</span>
+        <span id="cart-total">$0.00</span>
+      </div>
+      <button class="btn btn-primary checkout-btn">Proceed to Checkout</button>
+    </div>
+  </div>
+
+  <!-- Checkout Modal Dialog -->
+  <div class="modal-overlay" id="checkout-modal">
+    <div class="modal-dialog glass-panel">
+      <button class="modal-close-btn" aria-label="Close checkout modal">
+        <svg viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12"/></svg>
+      </button>
+      <h3 class="modal-title">Checkout Order</h3>
+      <p class="modal-desc">Review your checkout details and complete pickup/delivery setup.</p>
+
+      <div class="checkout-method-tabs">
+        <button class="checkout-method-tab active" id="tab-pickup">Store Pickup</button>
+        <button class="checkout-method-tab" id="tab-delivery">Home Delivery</button>
+      </div>
+
+      <form id="checkout-form">
+        <div class="form-group">
+          <label for="checkout-name" class="form-label">Full Name</label>
+          <input type="text" id="checkout-name" class="form-input" required placeholder="Alex Mercer">
+        </div>
+        <div class="form-group">
+          <label for="checkout-email" class="form-label">Email</label>
+          <input type="email" id="checkout-email" class="form-input" required placeholder="alex@mercer.com">
+        </div>
+        <div class="form-group">
+          <label for="checkout-phone" class="form-label">Phone Number</label>
+          <input type="tel" id="checkout-phone" class="form-input" required placeholder="(555) 019-2834">
+        </div>
+        <div class="form-group" id="address-group" style="display: none;">
+          <label for="checkout-address" class="form-label">Delivery Address</label>
+          <input type="text" id="checkout-address" class="form-input" placeholder="123 Espresso Way, Apt 4B">
+        </div>
+
+        <div class="receipt-card" style="margin-bottom: 25px;">
+          <h4 style="font-family: var(--font-body); font-size:0.95rem; margin-bottom: 15px; color: var(--accent-primary);">Order Summary</h4>
+          <div id="checkout-items-summary">
+            <!-- summary lists by JS -->
+          </div>
+          <div class="receipt-row total">
+            <span>Total to Pay:</span>
+            <span id="checkout-total">$0.00</span>
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width: 100%;">Place Order & Pay</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Success Confirmation Modal -->
+  <div class="modal-overlay" id="success-modal">
+    <div class="modal-dialog glass-panel" style="text-align: center;">
+      <button class="modal-close-btn" aria-label="Close success modal">
+        <svg viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12"/></svg>
+      </button>
+      
+      <div class="success-checkmark">
+        <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+      </div>
+
+      <h3 class="modal-title">Order Confirmed!</h3>
+      <p class="modal-desc" style="margin-bottom: 10px;">Your transaction was successful. We have received your order details.</p>
+      
+      <div id="success-receipt">
+        <!-- Receipt details injected by JS -->
+      </div>
+
+      <p style="font-size:0.8rem; color: var(--text-muted); margin: 20px 0 10px;">A digital copy of this receipt has been emailed to you.</p>
+      
+      <button id="confirm-btn" class="btn btn-primary" style="width: 100%;">Return to Home</button>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
